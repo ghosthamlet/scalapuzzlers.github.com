@@ -7,25 +7,28 @@ sourceHref: http://stackoverflow.com/questions/2727612/scalas-tuple-unwrapping-n
 scalaVersion: 2.10.0
 puzzle: |
   var IJ: (Int, Int) = (3, 4)
+  println(IJ)
   var (I, J): (Int, Int) = (3, 4)
+  println(I)
+  println(J)
 possibleSolutions:
   a: 
     text: Prints
     code: |
-      IJ: (Int, Int) = (3, 4)
-      I: Int = 3
-      J: Int = 4
+      (3, 4)
+      3
+      4
   b:
     text: Both fail with compilation exceptions
   c:
     text: The first one succeeds and prints
     code: |
-      IJ: (Int, Int) = (3, 4)
+      (3, 4)
     text2: and the second one fails with a compilation exception
   d:
     text: The first one succeeds and prints
     code: |
-      IJ: (Int, Int) = (3, 4)
+      (3, 4)
     text2: and the second one fails with a runtime exception
 solution: c
 explanation: |
