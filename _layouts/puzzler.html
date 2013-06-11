@@ -40,8 +40,8 @@ layout: default
           </pre>
         {% endif %}
         {% if possibility[0] == page.solution %}
-          <form class="kata-form" action="http://localhost:9000/eval" method="post" target="_blank">
-          <!-- <form class="kata-form" action="https://scalakatatwo.herokuapp.com/eval" method="post"> -->
+          <!-- <form class="kata-form" action="http://localhost:9000/eval" method="post" target="_blank"> -->
+          <form class="kata-form" action="https://scalakatatwo.herokuapp.com/eval" method="post">
               <div class="kata-code-wrap">
                   <textarea class="kata-code" name="code">
 {{page.puzzle}}
